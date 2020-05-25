@@ -1,15 +1,8 @@
 {
-    "name": "lanin/laravel-api-debugger",
+    "name": "crixuamg/laravel-api-debugger",
     "description": "Easily debug your JSON API.",
     "keywords": ["laravel", "framework", "api", "debug", "debugger", "json", "dump", "queries", "log"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Maxim Lanin",
-            "email": "max@lanin.me",
-            "homepage": "http://lanin.me"
-        }
-    ],
     "require": {
         "php": ">=5.6.0",
         "illuminate/support": ">=5.4.0"
