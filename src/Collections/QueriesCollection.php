@@ -87,6 +87,21 @@ class QueriesCollection implements Collection
 
         // Finish query with semicolon.
         $query = rtrim($query, ';') . ';';
+        $query = str_replace(
+            [
+                "\t",
+                "\n",
+            ],
+            ' ',
+            $query
+        );
+        $query = str_replace(
+            [
+                '\"',
+            ],
+            '"',
+            $query
+        );
 
         $this->queries[] = compact('connection', 'query', 'time');
     }
